@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='style.css'>
+    <script src='https://kit.fontawesome.com/42451f1ac9.js' crossorigin='anonymous'></script>
+    <title>Etch-A-Sketch</title>
+</head>
+<body>
+    <header><h1>Etch-A-Sketch</h1></header>
+    <div class='container'>
+        
+        <div class='functions'>
+            <div class='range-slider'>
+                <label for="range-slider">Grid Size: <span class='grid-size-value'>16 x 16</span></label><br>
+                <input type="range" id="range-slider" name="range-slider" min="1" max="100" value="16" step="9" >
+            </div>
+            <!-- <div class='pen fa'>&#xf304;</div> -->
+            <!-- <div class='rainbow fa'>&#xf1fc;</div> -->
+            <!-- <div class='palette fa'>&#xf53f;</div> -->
+            <div class='erazer fa'>&#xf12d;</div>
+            <div class='reset-button'><button>Reset</button></div>
+        </div>
+        <div class='outer-grid'></div>
+    </div>
+    <script src='app.js'></script>
+</body>
+</html>
